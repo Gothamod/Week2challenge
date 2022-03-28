@@ -1,0 +1,97 @@
+body { /* here are all the adjustments made to the entire body of the web page inclueding height, flex, color*/
+    font-size: 16px;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: lightblue;
+}
+
+.self { /* this helps to orginize my about me section*/
+    width: 15%;
+}
+
+h1 { /* this makes changes to the first header the main line of my site */
+    font-size: 3rem;
+    background-color: silver;
+    align-self: left; margin: 1.5rem;
+}
+
+a { /* this cnages all link so their color is green and the line underneath is removed cleanign it up*/
+    text-decoration: none;
+    color: green;
+}
+
+nav { /* this si my nav bar to help orginize it*/
+    height: 80px;
+    width: 100%;
+    background-color: peachpuff;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    align-self: center;
+}
+
+nav ul { /* another nav bar orginization*/
+    float: center; margin-inline: 20px;
+}
+
+nav ul li { /* still another nav bar orginization*/
+    display: inline-block;
+    line-height: 80px;
+    margin: 0;
+}
+
+a.active,a:hover{ /* when a link is hovered over it will turn black instead fo green*/
+    color: black;
+    transition: 0.5s;
+}
+
+h2 { /* changes to my second main line mostly to add a bakground color and enlarge it*/
+    font-size: 2.5rem;
+    background-color: grey;
+}
+
+p { /* changes the font of my about me section*/
+    font-size: 1.5rem
+}
+
+h3 { /* cnages font of the third main line as well as add background color*/
+    font-size: 2.5rem;
+    background-color: slategray;
+}
+
+.misty { /* help flex the image for other devices*/
+    flex: 1;
+    padding: 50px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;  
+}
+
+.image2 { /* same as before*/
+    flex: 1;
+    padding: 50px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+    
+}
+
+h4 { /* my last main line does the same as the other mian lines*/
+    font-size: 2.5rem;
+    background-color: gainsboro;
+}
+
+.mail { /* my email link enlarged and centered because it sat on top of my return to top link*/
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) { /* support for the flexing and the wrap dotn really understand it all completly.*/
+    main,
+    nav {
+        flex-direction: column;
+    }
+}
